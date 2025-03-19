@@ -1,7 +1,7 @@
 def caesar_cipher(text, shift, mode='encrypt'):
     result = ""
     if mode == 'decrypt':
-        shift = -shift  # Reverse the shift for decryption
+        shift = -shift  
     
     for char in text:
         if char.isalpha():
@@ -11,7 +11,7 @@ def caesar_cipher(text, shift, mode='encrypt'):
                 new_char = new_char.upper()
             result += new_char
         else:
-            result += char  # Keep spaces and punctuation unchanged
+            result += char  
     
     return result
 
